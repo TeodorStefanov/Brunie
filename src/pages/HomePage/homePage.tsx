@@ -5,7 +5,7 @@ export const HomePage: FC = () => {
     <div>
       Hello
       <div>
-      <Button variant="contained">Contained</Button>
+        <Button variant="contained">Contained</Button>
       </div>
     </div>
   );
