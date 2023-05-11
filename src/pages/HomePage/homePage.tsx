@@ -1,12 +1,10 @@
 import { FC } from "react";
-import Button from "@mui/material/Button";
+import { PageLayout } from "../../components/pageLayout";
+import styles from "./index.module.css";
 export const HomePage: FC = () => {
   return (
-    <div>
-      Hello
-      <div>
-        <Button variant="contained">Contained</Button>
-      </div>
-    </div>
+    <PageLayout>
+      <div className={styles.container}>hello</div>
+    </PageLayout>
   );
 };

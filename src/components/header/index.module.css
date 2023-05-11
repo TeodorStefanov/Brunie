@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-bottom: solid 1px rgb(249, 243, 243);
+  z-index: 10;
+}
