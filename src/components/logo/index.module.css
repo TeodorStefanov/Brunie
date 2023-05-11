@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+.logoName {
+  font-size: 40px;
+  margin: 0;
+  font-family: cursive;
+  color: #1976d2;
+}
+.logoP {
+  font-size: 10px;
+  color: #1976d2;
+}
