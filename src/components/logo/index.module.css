@@ -4,11 +4,22 @@
   height: 100%;
   align-items: center;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 .logoName {
   font-size: 40px;
   margin: 0;
   font-family: cursive;
   color: #1976d2;
+}
+
+.logoImage {
+  width: 40px;
+  height: 40px;
 }
 .logoP {
   font-size: 10px;
