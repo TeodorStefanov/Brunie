@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import styles from "./index.module.css";
-export const Menu = () => {
+import { FC } from "react";
+export const Menu: FC = () => {
   return (
     <div className={styles.container}>
       <ul className={styles.list}>
