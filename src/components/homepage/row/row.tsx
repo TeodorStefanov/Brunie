@@ -8,11 +8,11 @@ export const Row = (props: Props) => {
   return (
     <div
       className={`${styles.row} ${
-        props.number == 1
+        props.number === 1
           ? styles.row1
           : props.number === 2
           ? styles.row2
-          : props.number === 3
+          : props.number === 3 
           ? styles.row3
           : styles.row4
       }`}

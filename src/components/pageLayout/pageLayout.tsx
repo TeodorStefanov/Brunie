@@ -1,4 +1,4 @@
-import { Header } from "../header";
+import { Header } from "../header/header";
 import styles from "./index.module.css";
 interface Props {
   children: React.ReactNode;
@@ -6,7 +6,7 @@ interface Props {
 export const PageLayout = (props: Props) => {
   return (
     <div className={styles.container}>
-      <Header/>
+      <Header />
       <div>{props.children}</div>
     </div>
   );
