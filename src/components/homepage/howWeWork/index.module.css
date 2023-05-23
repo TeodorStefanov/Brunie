@@ -13,8 +13,15 @@
 
 .logo {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 1000;
   border-top: solid 4px rgb(255, 255, 255);
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.logo:focus {
+  width: 110%;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
 .description {

@@ -9,9 +9,15 @@ export const WhoWeAre = () => {
         <p>WHO WE ARE</p>
       </div>
       <div className={styles.avatar}>
-        <img className={styles.imageThree} alt="Remy Sharp" src={image3} />
-        <img className={styles.imageTwo} alt="Remy Sharp" src={image2} />
-        <img className={styles.imageOne} alt="Remy Sharp" src={image} />
+        <div className={styles.divThree}>
+          <img className={styles.imageThree} alt="Remy Sharp" src={image3} />
+        </div>
+        <div className={styles.divTwo}>
+          <img className={styles.imageTwo} alt="Remy Sharp" src={image2} />
+        </div>
+        <div className={styles.divOne}>
+          <img className={styles.imageOne} alt="Remy Sharp" src={image} />
+        </div>
       </div>
     </div>
   );

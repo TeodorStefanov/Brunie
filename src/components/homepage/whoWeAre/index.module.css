@@ -20,6 +20,41 @@
   background-color: rgb(18, 14, 40);
 }
 .imageOne {
+  width: 100%;
+  height: 100%;
+  border-radius: 120px;
+}
+.imageOne:hover {
+  filter: drop-shadow(0 -6mm 4mm white);
+}
+.imageTwo {
+  width: 100%;
+  height: 100%;
+  border-radius: 184px;
+}
+.imageTwo:hover {
+  filter: drop-shadow(0 -6mm 4mm white);
+}
+.divThree {
+  position: absolute;
+  top: 18.2%;
+  left: 52%;
+  width: 320px;
+  height: 320px;
+  border: none;
+  border-radius: 220px;
+  cursor: pointer;
+}
+.divTwo {
+  position: absolute;
+  top: 2%;
+  left: 28%;
+  width: 280px;
+  height: 280px;
+  border-radius: 184px;
+  cursor: pointer;
+}
+.divOne {
   display: block;
   position: absolute;
   top: 50%;
@@ -27,27 +62,68 @@
   width: 220px;
   height: 220px;
   border-radius: 120px;
+  cursor: pointer;
 }
-.imageOne:hover {
-  filter: drop-shadow(0 -6mm 4mm white);
-}
-.imageTwo {
+.divOne:before,
+.divTwo:before,
+.divThree:before {
+  content: "";
   position: absolute;
-  top: 2%;
-  left: 28%;
-  width: 280px;
-  height: 280px;
-  border-radius: 184px;
+  inset: -8px;
+  padding: 10px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ff53bb,
+    #0000 30deg 120deg,
+    #00f8d3 150deg 180deg,
+    #0000 210deg 300deg,
+    #ff53bb 330deg
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: intersect;
+  -webkit-mask-composite: xor;
+  mask-composite: intersect;
 }
-.imageTwo:hover {
-  filter: drop-shadow(0 -6mm 4mm white);
+.divOne:after,
+.divTwo:after,
+.divThree:after {
+  content: "";
+  position: absolute;
+
+  filter: blur(120px);
+  opacity: 0.5;
+}
+.divOne:before,
+.divTwo:before,
+.divThree:before,
+.divOne:after,
+.divTwo:after,
+.divThree:after {
+  transition: 0.5s, 99999s 99999s transform;
+}
+.divOne:hover,
+.divTwo:hover,
+.divThree:hover {
+  box-shadow: 0 0 0 1px #666;
+}
+.divOne:hover:before,
+.divTwo:hover:before,
+.divThree:hover:before,
+.divOne:hover:after,
+.divTwo:hover:after,
+.divThree:hover:after {
+  transform: rotate(36000deg);
+  transition: 0.5s, 600s linear transform;
+}
+.divOne:before,
+.divTwo:before,
+.divThree:before {
+  background-color: #222;
+  border: 2px solid #333;
 }
 .imageThree {
-  position: absolute;
-  top: 18.2%;
-  left: 52%;
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   border-radius: 220px;
 }
 .imageThree:hover {
