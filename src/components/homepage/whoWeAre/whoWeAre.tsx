@@ -8,15 +8,17 @@ export const WhoWeAre = () => {
       <div className={styles.logo}>
         <p>WHO WE ARE</p>
       </div>
-      <div className={styles.avatar}>
-        <div className={styles.divThree}>
-          <img className={styles.imageThree} alt="Remy Sharp" src={image3} />
-        </div>
-        <div className={styles.divTwo}>
-          <img className={styles.imageTwo} alt="Remy Sharp" src={image2} />
-        </div>
-        <div className={styles.divOne}>
-          <img className={styles.imageOne} alt="Remy Sharp" src={image} />
+      <div className={styles.content}>
+        <div className={styles.avatar}>
+          <div className={styles.divThree}>
+            <img className={styles.imageThree} alt="Remy Sharp" src={image3} />
+          </div>
+          <div className={styles.divTwo}>
+            <img className={styles.imageTwo} alt="Remy Sharp" src={image2} />
+          </div>
+          <div className={styles.divOne}>
+            <img className={styles.imageOne} alt="Remy Sharp" src={image} />
+          </div>
         </div>
       </div>
     </div>
