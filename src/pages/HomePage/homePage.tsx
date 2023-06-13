@@ -13,7 +13,7 @@ export const HomePage: FC = () => {
           <Top />
         </div>
         <HowWeWork />
-        <WhoWeAre/>
+        <WhoWeAre />
       </div>
     </PageLayout>
   );
