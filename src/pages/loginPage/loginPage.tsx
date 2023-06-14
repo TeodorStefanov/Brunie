@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { remove, update } from "../../redux/userSlice";
+import "./loginPage.scss";
 export const LoginPage: FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -21,7 +22,7 @@ export const LoginPage: FC = () => {
   };
   console.log(user);
   return (
-    <div>
+    <div className="container">
       <input onChange={(e) => setName(e.target.value)}></input>
       <input onChange={(e) => setEmail(e.target.value)}></input>
       <button onClick={handleUpdate}>Update</button>
