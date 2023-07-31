@@ -26,6 +26,7 @@ export const LoginPage: FC = () => {
       <input onChange={(e) => setName(e.target.value)}></input>
       <input onChange={(e) => setEmail(e.target.value)}></input>
       <button onClick={handleUpdate}>Update</button>
+      <button onClick={handleRemove}>Remove</button>
     </div>
   );
 };
